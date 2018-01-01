@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400i');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700,700i');
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	color: #000;
+	margin: 0;
+	line-height: 1.5em;
+}
+
+a {
+	color: #000;
+	border-bottom: .5px solid #000;
+	padding-bottom: 1.5px;
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #fff;
+	margin: 2em;
+	letter-spacing: .2em;
+	padding-bottom: .25em;
+	border-bottom: .15em solid #fff;
+	font-size: .75em;
+}
+
+nav a:visited {
+	color: #fff;
+	border-bottom: .15em solid #fff;
+}
+
+nav a:hover {
+	color: #0DE8AB;
+
+}
+
+nav a:active {
+	color: #0DE8AB;
+}
+
+section {
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	background: #FFF;
+    padding: 0;
+    max-width: 1130px;
+    margin: 0 auto 2em auto;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+    padding: 1.75em;
+}
+
+h1 {
+	font-size: 1.75em;
+	letter-spacing: 4px;
+	line-height: 1.25em;
+}
+
+h2 {
+	font-size: 1em;
+	font-family: 'EB Garamond', 'Garamond', serif;
+}
+
+h3 {
+	font-size: .75em;
+	letter-spacing:.2em;
+}
+
+h4 {
+	color: #fff;
+	font-size: .65em;
+	font-family: 'EB Garamond', 'Garamond', serif;
+	letter-spacing: .05em;
+}
+
+p {
+	font-family: 'EB Garamond', 'Garamond', serif;
+	letter-spacing: .05em;
+}
+
+li {
+	font-size: .75em;
+	letter-spacing: 1px;
+}
+
+ul {
+	list-style: none;
+}
+
+label {
+	color: #fff;
+	margin: 2em;
+	letter-spacing: .2em;
+	padding-bottom: .25em;
+	border-bottom: .15em solid #fff;
+	font-size: .75em;
+	display: none;
+}
+
+hr {
+	margin-bottom: .2em;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+    padding: 1em 0;
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	box-shadow: 0px 500px 0px 500px #000;
+}
+
+footer a {
+	color: #fff;
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	line-height: 0em;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content:" ";
+	display: block;
+	clear:both;
+}
+
+#covers {
+	float:left;
+}
+
+.headline {
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	padding: 1em 0 0 0;
+	text-transform: uppercase;
+}
+
+.slogan {
+	letter-spacing: .15em;
+	line-height: 0em;
+	line-height: 1.25em;
+}
+
+.thumbnails {
+	width: 22%;
+	margin: auto;
+}
+
+.others {
+	width: 29%;
+	margin: auto;
+}
+
+.feet {
+	max-width: 80%;
+	margin: 1em auto;
+	padding: .5em 0;
+}
+
+.left-footer {
+	padding-top:.2em;
+	float: left;
+}
+
+.right-footer {
+	float: right;
+}
+
+#lander {
+	background: #000;
+	padding: 1.75em;	
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+}
+
+#two_column {
+    margin: .5em auto 2em auto;
+    color: #000;
+    background-color: #fff;
+    max-width: 1000px;
+    width: 80%;
+}
+
+#left {
+    float: left;
+    width: 40%;
+}
+
+#right {
+    float: right;   
+    width: 55%;
+    text-align: left;
+}
+
+#bio-pic {
+ 	width: 100%;
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 950px) {
+	.thumbnails {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.thumbnails {
+		width: 45%;
+	}
+	#two_column {
+    margin: .5em auto 3em auto;
+	}
+	#left, #right {
+		float: none;
+		margin: auto;
+		width: 100%;
+		padding-bottom: 1em;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	body {
+		font-size: 16px;
+	}
+
+	#lander {
+		padding: .15em;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav a:link {
+		display: block;
+		margin: 1.5em;
+		border-bottom: none;	
+	}
+
+	label {
+		display: block;
+		border-bottom: none;
+		margin: 1em;
+	}
+
+	#portfolio-name {
+		padding: 0em;
+	}
+
+	#toggle:checked + nav {
+		display: block;
+	}
+
+	nav a:link span {
+		border-bottom: .15em solid #fff;
+	}
+	
+	#slogan {
+		line-height: 1.25em;
+	}
+	
+	#bio-pic {
+	 	float: left;
+	 	width: 100%;
+		margin: 1.5em;
+	}
+
+	hr {
+		display: none;
+	}
+
+	.left-footer, .right-footer {
+		float: none;
+	}
+
+	.left-footer {
+		font-size: 3em;
+	}
+	
+	.right-footer h4 {
+		margin: 2em;
+		padding-top: 2em;
+		border-top: .15em solid #fff;
+		}
+}
